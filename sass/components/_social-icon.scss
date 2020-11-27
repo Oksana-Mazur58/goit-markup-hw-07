@@ -1,0 +1,21 @@
+.contact-nav-svg{
+  width: 16px;
+  
+}
+.mail-size{
+ width: 16px; 
+ height: 12px;
+}
+.tel-size{
+  width: 10px;
+  height: 16px;
+}
+.link{
+  fill: var(--primary-text-color);
+  transition-duration: 520ms ;
+  transition-timing-function: var(--timing-function); ;;
+}
+.link:hover .contact-nav-svg,
+.link:focus .contact-nav-svg{
+  fill: var(--accent);
+}
