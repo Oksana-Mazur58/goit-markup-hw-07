@@ -18,13 +18,13 @@
   margin-right: 10px;
 }
 .contact .link {
-  color: var(--primary-text-color);
-  transition-duration:  var(--time-duration);
-  transition-timing-function: var(--timing-function); ;;
+  color: $primary-text-color;
+  transition-duration:  $time-duration;
+  transition-timing-function: $timing-function;
 }
 
 .contact .link:focus,
 .contact .link:hover {
-  color: var(--accent);
+  color: $accent;
   
 }

@@ -11,11 +11,12 @@
   height: 16px;
 }
 .link{
-  fill: var(--primary-text-color);
+  fill: $primary-text-color;
   transition-duration: 520ms ;
-  transition-timing-function: var(--timing-function); ;;
-}
-.link:hover .contact-nav-svg,
-.link:focus .contact-nav-svg{
-  fill: var(--accent);
+  transition-timing-function: $timing-function; ;;
+
+    &:hover .contact-nav-svg,
+    &:focus .contact-nav-svg{
+      fill: $accent;
+    }
 }

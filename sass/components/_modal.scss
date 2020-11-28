@@ -31,17 +31,17 @@
   padding: 0;
   background-color:#FFFFFF;
   background-size: contain; 
+
+    &:hover .icon-close,
+    &:focus .icon-close{
+      fill: $accent;
+    }
 }
 .icon-close{
   width: 11px;
   height: 11px;
-  transition-duration: var(--time-duration);
-  transition-timing-function: var(--timing-function);
-}
-.modal-svg:hover .icon-close,
-.modal-svg:focus .icon-close{
-  fill: var(--accent);
-  
+  transition-duration: $time-duration;
+  transition-timing-function: $timing-function;
 }
 .form{
   width: 528px;
@@ -59,7 +59,7 @@
   text-align: center;
   margin-top: 40px;
   margin-bottom: 12px;
-  color: var(--title-text-color)
+  color: $title-text-color
 
 }
 .form-group{
@@ -93,10 +93,8 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
-
-letter-spacing: 0.03em;
-
-color: #757575;
+  letter-spacing: 0.03em;
+  color: #757575;
 }
 .form-button{
   text-align: center;
@@ -112,12 +110,12 @@ color: #757575;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 
-}
-.coment::placeholder{
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
+    &::placeholder{
+      font-size: 12px;
+      line-height: 1.16;
+      letter-spacing: 0.01em;
+      color: rgba(117, 117, 117, 0.5);
+      }
   }
 .form-contract{
   margin-left: 9px;
@@ -125,8 +123,18 @@ color: #757575;
 }
 .form-input{
   position: relative;
-  transition-duration: var(--time-duration);
-  transition-timing-function: var(--timing-function);
+  transition-duration: $time-duration;
+  transition-timing-function: $timing-function;
+  
+    &:focus{
+    border-color: $accent;
+    outline: $accent;
+  }
+
+    &:focus + .form-icon {
+    fill: $accent;
+    outline: $accent;
+  }
 }
 .form-icon{
   position: absolute;
@@ -135,18 +143,10 @@ color: #757575;
   top: 26px;
   left: 15px;
   transform: translateY(50%);
-  transition-duration: var(--time-duration);
-  transition-timing-function: var(--timing-function);
-}
-.form-input:focus{
-  border-color: var(--accent);
-  outline: var(--accent);
+  transition-duration: $time-duration;
+  transition-timing-function: $timing-function;
 }
 
-.form-input:focus + .form-icon {
-  fill: var(--accent);
-  outline: var(--accent);
-}
 .form-icon-mail{
   width: 15px;
   height: 12px ;
@@ -160,6 +160,14 @@ color: #757575;
        -moz-appearance:none;
             appearance:none;
   position: absolute;
+
+    &:checked + .icon-checked{
+    border-color: $accent;
+    background-color: $accent;
+    background-image: url("../Image/icon\ check.svg");
+    background-size: contain;
+    background-origin: border-box;
+    }
 }
 .checkbox-label{
   display: flex;
@@ -172,13 +180,6 @@ color: #757575;
   width: 15px;
   height: 16px;
   border: 1px solid;
-  border-color: var(--title-text-color);
+  border-color: $title-text-color;
   border-radius: 2px;
-}
-.checkbox:checked + .icon-checked{
-  border-color: var(--accent);
-  background-color: var(--accent);
-  background-image: url("../Image/icon\ check.svg");
-  background-size: contain;
-  background-origin: border-box;
 }
