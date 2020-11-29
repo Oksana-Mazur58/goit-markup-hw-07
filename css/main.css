@@ -304,11 +304,6 @@ body {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.form-contract {
-  margin-left: 9px;
-  color: var(--accent);
-}
-
 .form-input {
   position: relative;
   transition-duration: 250ms;
@@ -376,9 +371,14 @@ body {
   border-radius: 2px;
 }
 
+.form-contract {
+  margin-left: 9px;
+  color: #2196f3;
+}
+
 .social-link {
   display: flex;
-  margin-bottom: 30px;
+  margin-bottom: 29px;
   margin-right: 32px;
   margin-left: 32px;
 }
@@ -523,7 +523,7 @@ body {
   height: 120px;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: var(--backgraund-color2);
+  background-color: #F5F4FA;
   margin-bottom: 30px;
 }
 
@@ -638,13 +638,13 @@ body {
 }
 
 .our-team .profession {
-  margin-bottom: 14px;
+  margin-bottom: 15px;
 }
 
 .our-team .name {
   color: #212121;
   font-weight: 500;
-  margin-top: 30px;
+  margin-top: 29px;
   margin-bottom: 10px;
 }
 

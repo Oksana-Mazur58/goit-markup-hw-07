@@ -117,10 +117,7 @@
       color: rgba(117, 117, 117, 0.5);
       }
   }
-.form-contract{
-  margin-left: 9px;
-  color: var( --accent);
-}
+
 .form-input{
   position: relative;
   transition-duration: $time-duration;
@@ -182,4 +179,8 @@
   border: 1px solid;
   border-color: $title-text-color;
   border-radius: 2px;
+}
+.form-contract{
+  margin-left: 9px;
+  color: $accent;
 }
