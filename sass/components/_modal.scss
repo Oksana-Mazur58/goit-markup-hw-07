@@ -85,7 +85,9 @@
 }
 
 .conditions{
-  display: inline-block;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   padding-right: 16px;
   margin-bottom: 0px;
   font-family: Roboto;
@@ -152,11 +154,7 @@
   width: 13px;
   height: 13px;
 }
-.conditions{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
+
 .checkbox{
   -webkit-appearance:none;
        -moz-appearance:none;
