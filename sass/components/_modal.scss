@@ -152,6 +152,11 @@
   width: 13px;
   height: 13px;
 }
+.conditions{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 .checkbox{
   -webkit-appearance:none;
        -moz-appearance:none;
