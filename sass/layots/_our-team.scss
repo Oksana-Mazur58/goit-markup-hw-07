@@ -1,5 +1,5 @@
 .section-our-team{
-  background-color:var(--backgraund-color2) ;
+  background-color: $backgraund-color2 ;
 }
 .team{
   padding-top: 94px;
@@ -27,12 +27,12 @@
   letter-spacing: 0.03em;
  }
 .our-team .profession{
-  margin-bottom: 15px;
+  margin-bottom: 16px;
 }
 
 .our-team .name {
   color: $title-text-color;
   font-weight: 500;
-  margin-top: 29px;
+  margin-top: 31px;
   margin-bottom: 10px;
 }
